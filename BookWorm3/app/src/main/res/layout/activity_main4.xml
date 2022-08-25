@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/back22"
+    android:background="@drawable/back5555"
     tools:context=".MainActivity4">
 
     <ListView
 
         android:id="@+id/list"
-        android:layout_width="391dp"
-        android:layout_height="733dp" />
+        android:layout_width="match_parent"
+        android:layout_height="535dp"
+
+        android:layout_marginTop="50dp" />
 </LinearLayout>

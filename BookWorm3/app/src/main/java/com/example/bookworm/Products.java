@@ -2,7 +2,13 @@ package com.example.bookworm;
 
 import java.io.Serializable;
 
-public class Products {
+public class Products implements Serializable{
+
+
+    private String name;
+   private String author;
+    private double price;
+    private String pprice;
 
     public String getName() {
         return name;
@@ -52,7 +58,6 @@ public class Products {
         this.bi = bi;
     }
 
-
     public String getDet() {
         return det;
     }
@@ -61,23 +66,31 @@ public class Products {
         this.det = det;
     }
 
-    private String author;
+    public int getBii() {
+        return bii;
+    }
 
-    public Products(String name, String author, double price, String pprice, String pricee, int bi,  String det) {
+    public void setBii(int bii) {
+        this.bii = bii;
+    }
+
+    private String pricee;
+    private  int bi;
+
+    public Products(String name, String author, double price, String pprice, String pricee, int bi, String det, int bii) {
         this.name = name;
         this.author = author;
         this.price = price;
         this.pprice = pprice;
         this.pricee = pricee;
         this.bi = bi;
-
         this.det = det;
+        this.bii = bii;
     }
-    private String name;
-    private double price;
-    private String pprice;
-    private String pricee;
-    private  int bi;
+
     private String det;
+    private int bii;
+
+
 
 }
